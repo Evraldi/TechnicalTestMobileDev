@@ -1,4 +1,3 @@
-// hooks/useSearch.ts
 import { useState, useCallback, useMemo } from 'react';
 import { Post } from '../types';
 

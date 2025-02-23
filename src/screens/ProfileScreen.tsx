@@ -41,8 +41,6 @@ const ProfileScreen = () => {
   const socialLinks = [
     { name: 'GitHub', url: 'https://github.com/Evraldi', icon: 'github', color: '#333' },
     { name: 'LinkedIn', url: 'https://www.linkedin.com/in/evraldi-yadin-2782102a2', icon: 'linkedin', color: '#0077b5' },
-    { name: 'Twitter', url: 'https://twitter.com/evraldi', icon: 'twitter', color: '#1da1f2' },
-    { name: 'Website', url: 'https://evraldi.dev', icon: 'globe', color: '#1abc9c' },
   ];
 
   const renderStatItem = (icon: string, title: string, value: string | number) => (
@@ -51,7 +49,7 @@ const ProfileScreen = () => {
       entering={ZoomIn.delay(300)}
     >
       <MaterialIcons 
-        name={icon as "work" | "schedule" | "code"} // <-- Gunakan tipe yang valid
+        name={icon as "work" | "schedule" | "code"}
         size={24} 
         color={themeStyles.icon.color} 
       />
@@ -79,7 +77,7 @@ const ProfileScreen = () => {
     statTitle: {
       color: theme === 'light' ? '#95a5a6' : '#7f8c8d',
     },
-    statItem: {  // <-- Tambahkan ini
+    statItem: {
       backgroundColor: theme === 'light' ? '#ffffff' : '#1e1e1e',
     }
   };

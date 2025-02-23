@@ -1,4 +1,3 @@
-// hooks/usePosts.ts
 import { useState, useCallback, useMemo, useRef } from 'react';
 import { Post } from '../types';
 

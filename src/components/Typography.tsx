@@ -1,7 +1,5 @@
-// components/Typography.tsx
 import React from 'react';
 import { Text as RNText, TextProps, StyleSheet } from 'react-native';
-import { ThemeType } from '../types';
 import { useTheme } from '../contexts/ThemeContext';
 
 type TypographyProps = TextProps & {

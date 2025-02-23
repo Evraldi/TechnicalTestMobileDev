@@ -16,7 +16,7 @@ import Animated, {
   Layout
 } from 'react-native-reanimated';
 import { useTheme } from '../contexts/ThemeContext';
-import { Comment, RootStackParamList } from '../types';
+import { RootStackParamList } from '../types';
 import { RouteProp } from '@react-navigation/native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import Icon from 'react-native-vector-icons/MaterialIcons';
