@@ -29,9 +29,16 @@ export const AuthScreen = () => {
       const success = isLogin 
         ? await login(username, password)
         : await register(username, password);
-      
+        
       if (!success) {
         throw new Error(`Gagal ${isLogin ? 'Login' : 'Registrasi'}`);
+      } else {
+        if (isLogin) {
+          alert('Login berhasil!');
+        } else {
+          alert('Registrasi berhasil! Silahkan login.');
+          setIsLogin(true);
+        }
       }
     } catch (error) {
       if (error instanceof Error) {
@@ -43,8 +50,7 @@ export const AuthScreen = () => {
       setIsLoading(false);
     }
   };
-
-  // Variabel dinamis untuk dark/light mode
+  
   const gradientColors = theme === 'light' 
     ? ['#f8f9fa', '#e9ecef'] as const 
     : ['#121212', '#2c3e50'] as const;
